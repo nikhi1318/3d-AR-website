@@ -56,7 +56,7 @@ basicAnimate();
 // Load GLTF Model
 let model;
 const loader = new GLTFLoader();
-loader.load("/assets/black_chair.glb", function (gltf) {
+loader.load("/black_chair.glb", function (gltf) {
   model = gltf.scene;
   model.traverse((node) => {
     if (node.isMesh && node.material) {
